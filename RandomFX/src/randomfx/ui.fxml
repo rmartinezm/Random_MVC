@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?> 
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.beans.property.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.Color?>
+
+<VBox spacing="20" alignment="CENTER" prefWidth="300" prefHeight="250" fx:controller="randomfx.Controlador" xmlns:fx="http://javafx.com/fxml">
+    
+    <fx:define>
+        <Font fx:id="FONT" size="18" />
+    </fx:define>
+    
+    <StackPane alignment="CENTER">
+        <Rectangle fill="TRANSPARENT" stroke="GRAY" width="100" height="80" />
+        <Text fx:id="output" />
+    </StackPane>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="tf" prefWidth="100" prefHeight="30" />
+        <Button text="Dame un número Random" font="$FONT" prefWidth="100" prefHeight="20" onAction="#dameRandom" />
+    </HBox>
+    
+</VBox>
